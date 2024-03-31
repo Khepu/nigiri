@@ -9,6 +9,7 @@ import globalStyles from '../public/globalStyles.styles.js';
 import { StyledEngineProvider } from '@mui/material/styles';
 import config from '../configuration.yaml';
 import '../styles/github-markdown.css';
+import { Analytics } from "@vercel/analytics/react";
 
 function App({ Component, pageProps, config_yml }) {
   const [theme, setTheme] = useState('dark');
@@ -22,6 +23,7 @@ function App({ Component, pageProps, config_yml }) {
 
   return (
     <>
+      <Analytics/>
       <StyledEngineProvider injectFirst>
         <Global styles={() => globalStyles(theme, config)} />
         <Head>

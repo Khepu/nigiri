@@ -7,8 +7,6 @@ import { useEffect } from 'react';
 import TOC from '../../components/TOC/TOC.js';
 import { formatDateString } from '../../utils/utils.js';
 
-import { Analytics } from "@vercel/analytics/react";
-
 import Prism from 'prismjs';
 
 // Top Languages
@@ -94,7 +92,6 @@ export default function Post({ post, morePosts, preview }) {
         <PostTitle>Loading…</PostTitle>
       ) : (
         <>
-          <Analytics/>
           <article>
             <Head>
               <title>{title}</title>
