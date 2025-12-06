@@ -63,6 +63,7 @@ function App({ Component, pageProps }) {
         </Layout>
       </ThemeProvider>
     </StyledEngineProvider>
+    </>
   );
 }
 
